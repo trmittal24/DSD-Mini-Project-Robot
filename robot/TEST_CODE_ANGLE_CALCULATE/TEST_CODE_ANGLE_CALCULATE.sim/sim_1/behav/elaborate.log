@@ -1,0 +1,19 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 72963f14c0da4df091d00dfffc928d98 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot MAIN_behav xil_defaultlib.MAIN -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture fsmd of entity xil_defaultlib.ALL_IN_ONE [all_in_one_default]
+Compiling architecture behavioral of entity xil_defaultlib.gyroangle [gyroangle_default]
+Compiling architecture rtl of entity xil_defaultlib.UART_TX [uart_tx_default]
+Compiling architecture behavioral of entity xil_defaultlib.main
+Built simulation snapshot MAIN_behav

@@ -1,0 +1,68 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Oct 18 15:19:22 2017
+| Host         : dsplab-OptiPlex-9020 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : report_control_sets -verbose -file MAIN_control_sets_placed.rpt
+| Design       : MAIN
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    15 |
+| Minimum Number of register sites lost to control set restrictions |    56 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           25 |
+| No           | No                    | Yes                    |               9 |            8 |
+| No           | Yes                   | No                     |              12 |            4 |
+| Yes          | No                    | No                     |              31 |           17 |
+| Yes          | No                    | Yes                    |              13 |            5 |
+| Yes          | Yes                   | No                     |              25 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+-----------------------------------------+--------------------------------+------------------+----------------+
+|       Clock Signal      |              Enable Signal              |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------------+-----------------------------------------+--------------------------------+------------------+----------------+
+|  Done_changing          |                                         | Receive_data_label/NewAddress0 |                1 |              1 |
+|  Check_counter_mod_OBUF |                                         | NewAddress                     |                1 |              1 |
+|  CLK_50_MHz_IBUF_BUFG   | REM_ASCII0                              | REM_ASCII[4]_i_1_n_0           |                2 |              3 |
+|  CLK_50_MHz_IBUF_BUFG   | REM_ONE_DIGIT0                          |                                |                3 |              5 |
+|  CLK_50_MHz_IBUF_BUFG   | FSM_sequential_STATE[4]_i_1_n_0         | Receive_data_label/AR[0]       |                2 |              5 |
+|  CLK_50_MHz_IBUF_BUFG   | UART_call/r_TX_Data[4]_i_1_n_0          |                                |                3 |              5 |
+|  CLK_50_MHz_IBUF_BUFG   | NUMBER0                                 |                                |                4 |              6 |
+|  CLK_200k_Hz_BUFG       | Receive_data_label/DataOut_u[7]_i_1_n_0 | Receive_data_label/AR[0]       |                3 |              8 |
+|  CLK_200k_Hz_BUFG       |                                         | Receive_data_label/AR[0]       |                8 |              9 |
+|  CLK_50_MHz_IBUF_BUFG   |                                         |                                |                7 |             10 |
+|  CLK_50_MHz_IBUF_BUFG   |                                         | clear                          |                2 |             10 |
+|  CLK_200k_Hz_BUFG       |                                         |                                |                5 |             12 |
+|  CLK_50_MHz_IBUF_BUFG   | UART_call/r_Clk_Count[13]_i_1_n_0       |                                |                7 |             15 |
+|  CLK_50_MHz_IBUF_BUFG   | NUMBER0                                 | NUMBER[27]_i_1_n_0             |               13 |             22 |
+| ~NewAddress_BUFG        |                                         |                                |               13 |             32 |
++-------------------------+-----------------------------------------+--------------------------------+------------------+----------------+
+
+

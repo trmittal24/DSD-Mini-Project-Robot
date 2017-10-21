@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Oct 17 12:40:56 2017
+# Process ID: 15508
+# Current directory: /home/dsplab/Angle_calculate/Angle_calculate.runs/synth_1
+# Command line: vivado -log MAIN.vds -mode batch -messageDb vivado.pb -notrace -source MAIN.tcl
+# Log file: /home/dsplab/Angle_calculate/Angle_calculate.runs/synth_1/MAIN.vds
+# Journal file: /home/dsplab/Angle_calculate/Angle_calculate.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source MAIN.tcl -notrace

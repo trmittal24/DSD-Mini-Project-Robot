@@ -1,0 +1,1036 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Oct 18 17:11:18 2017
+# Process ID: 10985
+# Current directory: /home/dsplab/angle_accel/angle_accel.runs/sqrt_synth_1
+# Command line: vivado -log sqrt.vds -mode batch -messageDb vivado.pb -notrace -source sqrt.tcl
+# Log file: /home/dsplab/angle_accel/angle_accel.runs/sqrt_synth_1/sqrt.vds
+# Journal file: /home/dsplab/angle_accel/angle_accel.runs/sqrt_synth_1/vivado.jou
+#-----------------------------------------------------------
+source sqrt.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top sqrt -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -260 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1045.207 ; gain = 201.059 ; free physical = 3728 ; free virtual = 21144
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sqrt' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/synth/sqrt.vhd:71]
+INFO: [Synth 8-3491] module 'cordic_v6_0_9' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:116' bound to instance 'U0' of component 'cordic_v6_0_9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/synth/sqrt.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:173]
+INFO: [Synth 8-3491] module 'cordic_v6_0_9_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9450' bound to instance 'i_synth' of component 'cordic_v6_0_9_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_9_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9518]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2073]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2081]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2085]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2089]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2093]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2099]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2107]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2123]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2127]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2131]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2135]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2144]
+INFO: [Synth 8-3919] null assignment ignored [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9718]
+INFO: [Synth 8-3919] null assignment ignored [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9719]
+INFO: [Synth 8-3919] null assignment ignored [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9723]
+INFO: [Synth 8-3919] null assignment ignored [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9750]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd:284' bound to instance 'i_nd_to_rdy' of component 'xbip_pipe_v3_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9910]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_1_viv' (1#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+INFO: [Synth 8-3491] module 'cordic_v6_0_9_synth' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8990' bound to instance 'i_synth' of component 'cordic_v6_0_9_synth' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9997]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_9_synth' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9038]
+INFO: [Synth 8-3491] module 'cordic_inp_config' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4284' bound to instance 'input_stage' of component 'cordic_inp_config' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9194]
+INFO: [Synth 8-638] synthesizing module 'cordic_inp_config' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4314]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_x_min_y' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4516]
+INFO: [Synth 8-638] synthesizing module 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1036]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1039]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1042]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1045]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1048]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1051]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1057]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1061]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1068]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1074]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1080]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1084]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1089]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1091]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1093]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1096]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1098]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1101]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1106]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1108]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1110]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1112]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1114]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1131]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1840]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1843]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1847]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1850]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1853]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1856]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1859]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1862]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1865]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1868]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1871]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1874]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1877]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1880]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1883]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1886]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1889]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1892]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1895]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1898]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1901]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1904]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1907]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1910]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1913]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1916]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1919]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1922]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1925]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1928]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1931]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1934]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1939]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1944]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1947]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1956]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1961]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1965]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1982]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1985]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1988]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2008]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2386]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2390]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:378]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:379]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:380]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:381]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:382]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:383]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv' (2#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy' (3#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy' (4#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy' (5#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv' (6#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub' (7#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_x_plus_y' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4535]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' (7#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' (7#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' (7#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized1' (7#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized1' (7#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_x_int_dly' of component 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4557]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_y_int_dly' of component 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4570]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_neg_data_x_swap' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4592]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized2' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized2' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized3' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized3' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized3' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized3' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized3' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_neg_data_y_swap' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4611]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized4' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized4' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized5' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized5' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized5' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized5' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized5' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_phase_4quad' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4649]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized6' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized6' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized7' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized7' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized7' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized7' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized7' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_phase_3_4quad' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4669]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized8' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized8' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized9' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized9' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized9' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized9' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized9' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_phase_2_4quad' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4689]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized11' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized11' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized11' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized11' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized11' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized10' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized10' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized11' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized11' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized11' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized11' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized11' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_phase_1_4quad' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4709]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized13' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized13' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized13' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized13' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized13' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized12' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized12' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized13' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized13' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized13' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized13' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized13' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_phase_int_dly' of component 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4729]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_phase_cr' of component 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4763]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_quad_cr' of component 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4809]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized4' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized4' (8#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay_bit' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4040' bound to instance 'gen_nd_cr' of component 'delay_bit' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4822]
+INFO: [Synth 8-638] synthesizing module 'delay_bit' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit' (9#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'cordic_inp_config' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4314]
+INFO: [Synth 8-3491] module 'cordic_eng' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4928' bound to instance 'cordic_engine' of component 'cordic_eng' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9224]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4961]
+INFO: [Synth 8-3491] module 'cordic_eng_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5145' bound to instance 'eng' of component 'cordic_eng_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4998]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-3491] module 'cordic_dat_acc_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5353' bound to instance 'data_slice' of component 'cordic_dat_acc_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5214]
+INFO: [Synth 8-638] synthesizing module 'cordic_dat_acc_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'x_plus_y_shift' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5403]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized15' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized15' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized15' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized15' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized15' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized14' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized14' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized15' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized15' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized15' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized15' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized15' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'y_plus_x_shift' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5427]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized17' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized17' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized17' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized17' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized17' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized16' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized16' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized17' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized17' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized17' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized17' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized17' (10#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_dat_acc_slice_par' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-3491] module 'cordic_pha_acc_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:6044' bound to instance 'phase_slice' of component 'cordic_pha_acc_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5238]
+INFO: [Synth 8-638] synthesizing module 'cordic_pha_acc_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:6064]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'phase_plus_atan' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:6078]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized19' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized19' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized19' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized19' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized19' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized18' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized18' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized19' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized19' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized19' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized19' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized19' (11#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_pha_acc_slice_par' (12#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:6064]
+INFO: [Synth 8-3491] module 'cordic_ctrl_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5796' bound to instance 'cntrl' of component 'cordic_ctrl_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5257]
+INFO: [Synth 8-638] synthesizing module 'cordic_ctrl_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5816]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'cntrl_vect_dly' of component 'delay' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5823]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized6' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized6' (12#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay_bit' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4040' bound to instance 'engine_mode_dly' of component 'delay_bit' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5836]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized1' (12#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'cordic_ctrl_slice_par' (13#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5816]
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng_slice_par' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-3491] module 'cordic_eng_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5145' bound to instance 'eng' of component 'cordic_eng_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4998]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng_slice_par__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-3491] module 'cordic_dat_acc_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5353' bound to instance 'data_slice' of component 'cordic_dat_acc_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5214]
+INFO: [Synth 8-638] synthesizing module 'cordic_dat_acc_slice_par__parameterized1' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'x_plus_y_shift' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5403]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized21' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized21' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized21' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized21' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized21' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized20' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized20' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized21' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized21' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized21' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized21' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized21' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'addsub' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'y_plus_x_shift' of component 'addsub' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5427]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized23' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized23' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized23' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized23' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized23' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_reg_fd_v12_0_1_viv' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:331' bound to instance 'qreg' of component 'c_reg_fd_v12_0_1_viv' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2940]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized22' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized22' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized23' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized23' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized23' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized23' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized23' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_dat_acc_slice_par__parameterized1' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-3491] module 'cordic_pha_acc_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:6044' bound to instance 'phase_slice' of component 'cordic_pha_acc_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5238]
+INFO: [Synth 8-3491] module 'cordic_ctrl_slice_par' declared at '/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5796' bound to instance 'cntrl' of component 'cordic_ctrl_slice_par' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5257]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng_slice_par__parameterized1' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng_slice_par__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_dat_acc_slice_par__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized25' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized25' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized25' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized25' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized25' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized24' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized24' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized25' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized25' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized25' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized25' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized25' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized27' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized27' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized27' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized27' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized27' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized26' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized26' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized27' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized27' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized27' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized27' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized27' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_dat_acc_slice_par__parameterized3' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng_slice_par__parameterized3' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng_slice_par__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_dat_acc_slice_par__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized29' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized29' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized29' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized29' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized29' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized28' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized28' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized29' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized29' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized29' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized29' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized29' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized31' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized31' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized31' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized31' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized31' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized30' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized30' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized31' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized31' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized31' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized31' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized31' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_dat_acc_slice_par__parameterized5' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng_slice_par__parameterized5' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng_slice_par__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_dat_acc_slice_par__parameterized7' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized33' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized33' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized33' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized33' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized33' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized32' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized32' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized33' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized33' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized33' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized33' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized33' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized35' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized35' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized35' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized35' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized35' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized34' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized34' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized35' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized35' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized35' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized35' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized35' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_dat_acc_slice_par__parameterized7' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng_slice_par__parameterized7' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_eng_slice_par__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-638] synthesizing module 'cordic_dat_acc_slice_par__parameterized9' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized37' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized37' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized37' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized37' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized37' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized36' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized36' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized37' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized37' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized37' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized37' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized37' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized39' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized39' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized39' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized39' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized39' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized38' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized38' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized39' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized39' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized39' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized39' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized39' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-256] done synthesizing module 'cordic_dat_acc_slice_par__parameterized9' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5376]
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng_slice_par__parameterized9' (14#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:5175]
+INFO: [Synth 8-256] done synthesizing module 'cordic_eng' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4961]
+INFO: [Synth 8-638] synthesizing module 'cordic_out_config' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:7405]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized3' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-3919] null assignment ignored [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4070]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized3' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized41' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized41' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized41' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized41' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized41' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized40' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized40' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized41' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized41' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized41' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized41' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized41' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized43' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized43' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized43' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized43' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized43' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized42' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+WARNING: [Synth 8-5639] ignoring null variable initialization [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_reg_fd_v12_0_1_viv__parameterized42' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_reg_fd_v12_0_1/hdl/c_reg_fd_v12_0_vh_rfs.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized43' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized43' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized43' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized43' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized43' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized5' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized5' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized10' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3919] null assignment ignored [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3556]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized10' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-638] synthesizing module 'cordic_round' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8048]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized12' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized12' (15#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_round' (16#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8048]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized8' [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized8' (16#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'cordic_out_config' (17#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:7405]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_9_synth' (18#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9038]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_9_viv' (19#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9518]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_9' (20#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'sqrt' (21#1) [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/synth/sqrt.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1114.070 ; gain = 269.922 ; free physical = 3661 ; free virtual = 21060
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1114.070 ; gain = 269.922 ; free physical = 3661 ; free virtual = 21060
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 648 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/dsplab/angle_accel/angle_accel.runs/sqrt_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/dsplab/angle_accel/angle_accel.runs/sqrt_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1429.523 ; gain = 1.000 ; free physical = 3486 ; free virtual = 20886
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11005 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3483 ; free virtual = 20883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3483 ; free virtual = 20883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3483 ; free virtual = 20883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3481 ; free virtual = 20881
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3481 ; free virtual = 20881
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3476 ; free virtual = 20876
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3476 ; free virtual = 20876
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[1].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ' (FDRE) to 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[2].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ' (FDRE) to 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[3].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ' (FDRE) to 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[4].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ' (FDRE) to 'U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg )
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[0].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[1].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[2].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[3].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.cordic_engine/gen_para_arch.gen_iteration[4].eng/cntrl/engine_mode_dly/gen_rtl.gen_reg.d_reg_reg ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_cr/gen_rtl.gen_reg.d_reg_reg[2] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_cr/gen_rtl.gen_reg.d_reg_reg[1] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_cr/gen_rtl.gen_reg.d_reg_reg[0] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_y_cr/gen_rtl.gen_reg.d_reg_reg[2] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_y_cr/gen_rtl.gen_reg.d_reg_reg[1] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_y_cr/gen_rtl.gen_reg.d_reg_reg[0] ) is unused and will be removed from module cordic_v6_0_9_viv.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3469 ; free virtual = 20868
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3469 ; free virtual = 20868
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3437 ; free virtual = 20837
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3432 ; free virtual = 20831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20827
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20826
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    35|
+|2     |LUT2   |    29|
+|3     |LUT3   |   354|
+|4     |LUT4   |    22|
+|5     |LUT5   |     3|
+|6     |LUT6   |    10|
+|7     |MUXCY  |   310|
+|8     |SRL16E |     4|
+|9     |XORCY  |   338|
+|10    |FDRE   |   453|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20826
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1429.523 ; gain = 140.105 ; free physical = 3427 ; free virtual = 20826
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1429.523 ; gain = 585.375 ; free physical = 3427 ; free virtual = 20826
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 648 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/dsplab/angle_accel/angle_accel.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 113 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 113 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+586 Infos, 196 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 1429.523 ; gain = 506.027 ; free physical = 3426 ; free virtual = 20826
+INFO: [Coretcl 2-1174] Renamed 209 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1461.543 ; gain = 0.000 ; free physical = 3424 ; free virtual = 20824
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 17:12:21 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Sep  1 14:52:07 2017
+# Process ID: 3938
+# Current directory: /home/dsplab/I2C_FSM/I2C_FSM.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/dsplab/I2C_FSM/I2C_FSM.sim/sim_1/behav/xsim.dir/I2C_controller_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/dsplab/I2C_FSM/I2C_FSM.sim/sim_1/behav/webtalk.log
+# Journal file: /home/dsplab/I2C_FSM/I2C_FSM.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/dsplab/I2C_FSM/I2C_FSM.sim/sim_1/behav/xsim.dir/I2C_controller_behav/webtalk/xsim_webtalk.tcl -notrace

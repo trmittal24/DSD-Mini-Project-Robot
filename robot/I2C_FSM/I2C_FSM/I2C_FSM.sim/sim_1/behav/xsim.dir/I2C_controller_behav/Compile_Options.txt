@@ -1,0 +1,1 @@
+-wto "098fd8a21d6449a58252cab9d02096f2" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "I2C_controller_behav" "xil_defaultlib.I2C_controller" -log "elaborate.log" 

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/sources_1/new/sv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/sources_1/new/asdfas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity gyroangle
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/sources_1/new/ad.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALL_IN_ONE
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/sources_1/new/MAIN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAIN

@@ -1,0 +1,590 @@
+
+*** Running vivado
+    with args -log MAIN.vds -m64 -mode batch -messageDb vivado.pb -notrace -source MAIN.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source MAIN.tcl -notrace
+Command: synth_design -top MAIN -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -259 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1031.965 ; gain = 187.812 ; free physical = 2111 ; free virtual = 19992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MAIN' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:48]
+INFO: [Synth 8-3491] module 'ALL_IN_ONE' declared at '/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Angle_calculate.vhd:11' bound to instance 'Receive_data_label' of component 'ALL_IN_ONE' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'ALL_IN_ONE' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Angle_calculate.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'ALL_IN_ONE' (1#1) [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Angle_calculate.vhd:33]
+INFO: [Synth 8-3491] module 'gyroangle' declared at '/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/division.vhd:34' bound to instance 'GyroAnglex' of component 'gyroangle' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'gyroangle' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/division.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'gyroangle' (2#1) [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/division.vhd:44]
+INFO: [Synth 8-3491] module 'UART_TX' declared at '/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/uart_new.vhd:18' bound to instance 'UART_call' of component 'UART_TX' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/uart_new.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (3#1) [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/uart_new.vhd:31]
+WARNING: [Synth 8-614] signal 'Done_changing' is read in the process but is not in the sensitivity list [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:126]
+WARNING: [Synth 8-614] signal 'Counter' is read in the process but is not in the sensitivity list [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'MAIN' (4#1) [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1072.348 ; gain = 228.195 ; free physical = 2071 ; free virtual = 19952
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1072.348 ; gain = 228.195 ; free physical = 2072 ; free virtual = 19953
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/dsplab/Angle_calculate/Angle_calculate.srcs/constrs_1/new/ANGLE_CALCULATE_CONS.xdc]
+Finished Parsing XDC File [/home/dsplab/Angle_calculate/Angle_calculate.srcs/constrs_1/new/ANGLE_CALCULATE_CONS.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dsplab/Angle_calculate/Angle_calculate.srcs/constrs_1/new/ANGLE_CALCULATE_CONS.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MAIN_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MAIN_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1402.887 ; gain = 0.000 ; free physical = 1860 ; free virtual = 19741
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15524 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1855 ; free virtual = 19737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1855 ; free virtual = 19737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1855 ; free virtual = 19737
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ALL_IN_ONE'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Receive_ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Read_WriteN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_TX'
+INFO: [Synth 8-5544] ROM "o_TX_Active" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "o_TX_Serial" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MAIN'
+INFO: [Synth 8-5545] ROM "Check_counter_mod" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Check_counter_mod_diff" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "REM_ONE_DIGIT2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5587] ROM size for "REM_ASCII" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "REM_ONE_DIGIT" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "STATE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "NUMBER" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "data_ready" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                           000000 |                         00000000
+                 iSTATE0 |                           000001 |                         00000001
+                 iSTATE1 |                           000010 |                         00000010
+                 iSTATE2 |                           000011 |                         00000011
+                 iSTATE3 |                           000100 |                         00010010
+                 iSTATE4 |                           000101 |                         00010011
+                 iSTATE5 |                           000110 |                         00100000
+                 iSTATE6 |                           000111 |                         00100001
+                 iSTATE7 |                           001000 |                         00110000
+                 iSTATE8 |                           001001 |                         00110001
+                 iSTATE9 |                           001010 |                         01000000
+                iSTATE10 |                           001011 |                         01000001
+                iSTATE11 |                           001100 |                         01010000
+                iSTATE12 |                           001101 |                         01010001
+                iSTATE13 |                           001110 |                         01010010
+                iSTATE14 |                           001111 |                         01010011
+                iSTATE15 |                           010000 |                         01010100
+                iSTATE16 |                           010001 |                         01110000
+                iSTATE17 |                           010010 |                         01110001
+                iSTATE18 |                           010011 |                         01110010
+                iSTATE19 |                           010100 |                         10000010
+                iSTATE20 |                           010101 |                         10000011
+                iSTATE21 |                           010110 |                         10010010
+                iSTATE22 |                           010111 |                         10010011
+                iSTATE31 |                           011000 |                         11101110
+                iSTATE23 |                           011001 |                         11000000
+                iSTATE24 |                           011010 |                         11000001
+                iSTATE25 |                           011011 |                         11010000
+                iSTATE27 |                           011100 |                         11010010
+                iSTATE28 |                           011101 |                         11010011
+                iSTATE29 |                           011110 |                         11010100
+                iSTATE30 |                           011111 |                         11010101
+                iSTATE26 |                           100000 |                         11010001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ALL_IN_ONE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                              000 |                              000
+          s_tx_start_bit |                              001 |                              001
+          s_tx_data_bits |                              010 |                              010
+           s_tx_stop_bit |                              011 |                              011
+               s_cleanup |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00000 |                            00000
+                      s1 |                            00001 |                            00001
+                      s2 |                            00010 |                            00010
+                      s3 |                            00011 |                            00011
+                      s4 |                            00100 |                            00100
+                      s5 |                            00101 |                            00101
+                      s6 |                            00110 |                            00110
+                      s7 |                            00111 |                            00111
+                      s8 |                            01000 |                            01000
+                      s9 |                            01001 |                            01001
+                     s10 |                            01010 |                            01010
+                     s11 |                            01011 |                            01011
+                     s12 |                            01100 |                            01100
+                     s13 |                            01101 |                            01101
+                     s14 |                            01110 |                            01110
+                     s15 |                            01111 |                            01111
+                     s16 |                            10000 |                            10000
+                     s17 |                            10001 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'MAIN'
+WARNING: [Synth 8-327] inferring latch for variable 'Counter_reg' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:144]
+WARNING: [Synth 8-327] inferring latch for variable 'NewAddress_reg' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 'Done_changing_reg' [/home/dsplab/Angle_calculate/Angle_calculate.srcs/sources_1/new/Main.vhd:148]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1843 ; free virtual = 19724
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Multipliers : 
+	                11x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  18 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   5 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  33 Input      8 Bit        Muxes := 3     
+	  18 Input      8 Bit        Muxes := 1     
+	  47 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  33 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  33 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	  18 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MAIN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  18 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  18 Input      5 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 6     
+Module ALL_IN_ONE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  33 Input      8 Bit        Muxes := 3     
+	  47 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  33 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  33 Input      1 Bit        Muxes := 10    
+Module gyroangle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
++---Multipliers : 
+	                11x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   5 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1843 ; free virtual = 19724
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "REM_ONE_DIGIT2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Check_counter_mod" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Check_counter_mod_diff" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1845 ; free virtual = 19727
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1845 ; free virtual = 19727
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[31] ' (FD) to 'GyroAnglex/\gyro_int_reg[28] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[30] ' (FD) to 'GyroAnglex/\gyro_int_reg[28] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[29] ' (FD) to 'GyroAnglex/\gyro_int_reg[28] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[28] ' (FD) to 'GyroAnglex/\gyro_int_reg[27] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[26] ' (FD) to 'GyroAnglex/\gyro_int_reg[27] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[27] ' (FD) to 'GyroAnglex/\gyro_int_reg[25] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[25] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[15] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[16] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[17] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[18] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[19] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[22] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[20] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[23] ' (FD) to 'GyroAnglex/\gyro_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\gyro_int_reg[24] ' (FD) to 'GyroAnglex/\gyro_int_reg[21] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[23] ' (FD) to 'GyroAnglex/\rem_int_reg[24] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[24] ' (FD) to 'GyroAnglex/\rem_int_reg[25] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[25] ' (FD) to 'GyroAnglex/\rem_int_reg[26] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[26] ' (FD) to 'GyroAnglex/\rem_int_reg[27] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[27] ' (FD) to 'GyroAnglex/\rem_int_reg[28] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[28] ' (FD) to 'GyroAnglex/\rem_int_reg[29] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[29] ' (FD) to 'GyroAnglex/\rem_int_reg[30] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[30] ' (FD) to 'GyroAnglex/\rem_int_reg[31] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[31] ' (FD) to 'GyroAnglex/\rem_int_reg[16] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[16] ' (FD) to 'GyroAnglex/\rem_int_reg[17] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[17] ' (FD) to 'GyroAnglex/\rem_int_reg[18] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[18] ' (FD) to 'GyroAnglex/\rem_int_reg[19] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[19] ' (FD) to 'GyroAnglex/\rem_int_reg[20] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[20] ' (FD) to 'GyroAnglex/\rem_int_reg[21] '
+INFO: [Synth 8-3886] merging instance 'GyroAnglex/\rem_int_reg[21] ' (FD) to 'GyroAnglex/\rem_int_reg[22] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\REM_ONE_DIGIT_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UART_call/\r_TX_Data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\REM_ASCII_reg[6] )
+INFO: [Synth 8-3886] merging instance 'UART_call/\r_TX_Data_reg[7] ' (FDE) to 'UART_call/\r_TX_Data_reg[6] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UART_call/\r_TX_Data_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[7] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[6] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[5] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[4] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[3] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[2] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[1] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\RegisterAddress_reg[0] ) is unused and will be removed from module ALL_IN_ONE.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[31] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[30] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[29] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[28] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[27] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[26] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[25] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[24] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[23] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[22] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[20] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[19] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[18] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[17] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[16] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\gyro_int_reg[15] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[31] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[30] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[29] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[28] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[27] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[26] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[25] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[24] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[23] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[21] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[20] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[19] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[18] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[17] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\rem_int_reg[16] ) is unused and will be removed from module gyroangle.
+WARNING: [Synth 8-3332] Sequential element (\r_TX_Data_reg[7] ) is unused and will be removed from module UART_TX.
+WARNING: [Synth 8-3332] Sequential element (\r_TX_Data_reg[6] ) is unused and will be removed from module UART_TX.
+WARNING: [Synth 8-3332] Sequential element (o_TX_Active_reg) is unused and will be removed from module UART_TX.
+WARNING: [Synth 8-3332] Sequential element (r_TX_Done_reg) is unused and will be removed from module UART_TX.
+WARNING: [Synth 8-3332] Sequential element (\REM_ONE_DIGIT_reg[6] ) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (\REM_ASCII_reg[6] ) is unused and will be removed from module MAIN.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1828 ; free virtual = 19709
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1828 ; free virtual = 19709
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1794 ; free virtual = 19683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1402.887 ; gain = 558.734 ; free physical = 1800 ; free virtual = 19682
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1765 ; free virtual = 19649
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1765 ; free virtual = 19649
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1765 ; free virtual = 19649
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1761 ; free virtual = 19644
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1761 ; free virtual = 19644
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1761 ; free virtual = 19644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1761 ; free virtual = 19644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1768 ; free virtual = 19644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1768 ; free virtual = 19644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   211|
+|3     |LUT1   |   194|
+|4     |LUT2   |   233|
+|5     |LUT3   |   246|
+|6     |LUT4   |   162|
+|7     |LUT5   |   229|
+|8     |LUT6   |   449|
+|9     |FDCE   |    29|
+|10    |FDPE   |     2|
+|11    |FDRE   |   199|
+|12    |LD     |    32|
+|13    |LDC    |     2|
+|14    |IBUF   |     2|
+|15    |IOBUF  |     1|
+|16    |OBUF   |    22|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------+------+
+|      |Instance             |Module     |Cells |
++------+---------------------+-----------+------+
+|1     |top                  |           |  2015|
+|2     |  GyroAnglex         |gyroangle  |   521|
+|3     |  Receive_data_label |ALL_IN_ONE |   114|
+|4     |  UART_call          |UART_TX    |    77|
++------+---------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1768 ; free virtual = 19644
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1402.918 ; gain = 104.410 ; free physical = 1769 ; free virtual = 19644
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.918 ; gain = 558.766 ; free physical = 1769 ; free virtual = 19644
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE (inverted pins: G): 32 instances
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1434.934 ; gain = 517.434 ; free physical = 1773 ; free virtual = 19649
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1466.953 ; gain = 0.000 ; free physical = 1760 ; free virtual = 19645
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 17 12:41:23 2017...

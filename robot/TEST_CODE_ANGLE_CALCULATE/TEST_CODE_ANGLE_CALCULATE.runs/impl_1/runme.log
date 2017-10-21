@@ -1,0 +1,452 @@
+
+*** Running vivado
+    with args -log MAIN.vdi -applog -m64 -messageDb vivado.pb -mode batch -source MAIN.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source MAIN.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'MAIN' is not ideal for floorplanning, since the cellview 'MAIN' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DataOut[15]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[14]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[13]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[12]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[11]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[10]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[9]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[8]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[15]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[14]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[13]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[12]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[11]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[10]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[9]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DataOut[8]'. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.srcs/constrs_1/new/new.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -260 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1304.457 ; gain = 64.031 ; free physical = 4292 ; free virtual = 21370
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1495546b4
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-194] Inserted BUFG NewAddress_BUFG_inst to drive 32 load(s) on clock net NewAddress
+INFO: [Opt 31-194] Inserted BUFG CLK_200k_Hz_BUFG_inst to drive 30 load(s) on clock net CLK_200k_Hz
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 142c64c4b
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1738.887 ; gain = 0.000 ; free physical = 3937 ; free virtual = 21032
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 2 cells.
+Phase 2 Constant Propagation | Checksum: 15f5dd7bd
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1738.887 ; gain = 0.000 ; free physical = 3937 ; free virtual = 21032
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 319 unconnected nets.
+INFO: [Opt 31-11] Eliminated 1 unconnected cells.
+Phase 3 Sweep | Checksum: 57fcce46
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1738.887 ; gain = 0.000 ; free physical = 3937 ; free virtual = 21032
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1738.887 ; gain = 0.000 ; free physical = 3937 ; free virtual = 21032
+Ending Logic Optimization Task | Checksum: 57fcce46
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1738.887 ; gain = 0.000 ; free physical = 3937 ; free virtual = 21032
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 57fcce46
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1738.887 ; gain = 0.000 ; free physical = 3937 ; free virtual = 21032
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1738.887 ; gain = 506.465 ; free physical = 3937 ; free virtual = 21032
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1770.902 ; gain = 0.000 ; free physical = 3936 ; free virtual = 21033
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.runs/impl_1/MAIN_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -260 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1802.918 ; gain = 0.000 ; free physical = 3932 ; free virtual = 21029
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1802.918 ; gain = 0.000 ; free physical = 3932 ; free virtual = 21028
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 41c10915
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1802.918 ; gain = 0.000 ; free physical = 3931 ; free virtual = 21029
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 41c10915
+
+Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3919 ; free virtual = 21021
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 41c10915
+
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3919 ; free virtual = 21021
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: fa4ba55c
+
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3919 ; free virtual = 21021
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13d4c39d4
+
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3919 ; free virtual = 21021
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+Phase 1.2.1 Place Init Design | Checksum: 17369bc49
+
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.60 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3918 ; free virtual = 21021
+Phase 1.2 Build Placer Netlist Model | Checksum: 17369bc49
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.60 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3918 ; free virtual = 21021
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 17369bc49
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.60 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3918 ; free virtual = 21021
+Phase 1.3 Constrain Clocks/Macros | Checksum: 17369bc49
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.60 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3918 ; free virtual = 21021
+Phase 1 Placer Initialization | Checksum: 17369bc49
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.61 . Memory (MB): peak = 1818.926 ; gain = 16.008 ; free physical = 3918 ; free virtual = 21021
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1f78ef757
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3908 ; free virtual = 21014
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f78ef757
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3909 ; free virtual = 21014
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d0b6f82d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3908 ; free virtual = 21014
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c7c3a993
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3908 ; free virtual = 21014
+
+Phase 3.4 Small Shape Detail Placement
+
+Phase 3.4.1 Commit Small Macros and Core Logic
+
+Phase 3.4.1.1 Commit Slice Clusters
+Phase 3.4.1.1 Commit Slice Clusters | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+Phase 3.4.1 Commit Small Macros and Core Logic | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+Phase 3.4 Small Shape Detail Placement | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+Phase 3 Detail Placement | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21011
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: e49cb512
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 16f85d8db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 16f85d8db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+Ending Placer Task | Checksum: cdf2d080
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1879.973 ; gain = 77.055 ; free physical = 3904 ; free virtual = 21010
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1879.973 ; gain = 0.000 ; free physical = 3902 ; free virtual = 21011
+report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1879.973 ; gain = 0.000 ; free physical = 3902 ; free virtual = 21008
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1879.973 ; gain = 0.000 ; free physical = 3901 ; free virtual = 21007
+report_control_sets: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1879.973 ; gain = 0.000 ; free physical = 3901 ; free virtual = 21007
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -260 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 9183f ConstDB: 0 ShapeSum: cde9b841 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: d6ee1785
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1910.613 ; gain = 30.641 ; free physical = 3742 ; free virtual = 20846
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: d6ee1785
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1916.602 ; gain = 36.629 ; free physical = 3711 ; free virtual = 20816
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: f5e89ca2
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3693 ; free virtual = 20799
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 0e21a0d2
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 171
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: cea0c6ba
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+Phase 4 Rip-up And Reroute | Checksum: cea0c6ba
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: cea0c6ba
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: cea0c6ba
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.180877 %
+  Global Horizontal Routing Utilization  = 0.220304 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 41.4414%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 32.4324%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 30.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+Phase 7 Route finalize | Checksum: cea0c6ba
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: cea0c6ba
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 87461950
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.867 ; gain = 52.895 ; free physical = 3692 ; free virtual = 20799
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.871 ; gain = 52.898 ; free physical = 3692 ; free virtual = 20799
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1932.871 ; gain = 0.000 ; free physical = 3690 ; free virtual = 20799
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/dsplab/TEST_CODE_ANGLE_CALCULATE/TEST_CODE_ANGLE_CALCULATE.runs/impl_1/MAIN_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2017.01' and will expire in -260 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Check_counter_mod_OBUF is a gated clock net sourced by a combinational pin Check_counter_mod_OBUF_inst_i_1/O, cell Check_counter_mod_OBUF_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (RPBF-3) IO port buffering is incomplete - Device port WokeUp expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC 23-20] Rule violation (RPBF-3) IO port buffering is incomplete - Device port data_ready expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./MAIN.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2233.488 ; gain = 204.543 ; free physical = 3398 ; free virtual = 20513
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file MAIN.hwdef
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 15:19:52 2017...
